@@ -1,0 +1,218 @@
+.hero {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  background-image: url("../../assets/images/Landing Page BG.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Poppins", sans-serif;
+}
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 87px);
+  color: #fff;
+}
+
+.heroText {
+  text-align: center;
+  height: 55%;
+  margin-bottom: 10%;
+}
+
+.heroTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: -10px;
+}
+.heroSubTitle {
+  font-size: 1.5rem;
+  padding: 0;
+}
+.heroButtons {
+  margin-top: 3rem;
+}
+.learnMore {
+  background-color: #6990eb;
+  color: #fff;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 11px 62px;
+  border-radius: 150px;
+  font-size: 18px;
+  margin-right: 31px;
+  /* outline: none; */
+}
+.roi {
+  /* outline: none !important; */
+  background-color: #4e76d2;
+  color: #fff;
+  padding: 11px 23px;
+  border: none;
+  font-size: 18px;
+  border-radius: 150px;
+  box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+.heroLinks {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heroLinks a {
+  color: #fff;
+  margin: 1.5px;
+  font-size: 0.7rem;
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.counters {
+  display: flex;
+  justify-content: space-between;
+  width: 884px;
+  margin-bottom: 2%;
+}
+.investitors {
+  text-align: center;
+  flex: 1;
+  /* border-right: 2px solid rgba(255, 255, 255, 0.2); */
+}
+.masternodes {
+  text-align: center;
+  flex: 1;
+}
+.payouts {
+  text-align: center;
+  flex: 1;
+}
+
+.counters {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 0;
+}
+.counter {
+  font-size: 36px;
+}
+.scrollDown {
+  display: none;
+}
+.divider {
+  width: 2px;
+  height: 56px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+@media (max-width: 1440px) {
+}
+@media (max-width: 1280px) {
+}
+@media (max-width: 1000px) {
+  .hero {
+    height: 100vh;
+    margin-bottom: 120px;
+  }
+  .heroContent {
+    min-height: calc(100vh - 137px);
+    justify-content: center;
+  }
+  .heroText {
+    text-align: center;
+    /* height: 55%; */
+  }
+  .heroTitle {
+    font-size: 24px;
+    margin-bottom: 19px;
+  }
+  .heroButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSubTitle {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .learnMore {
+    padding: 8px 45px;
+    margin-bottom: 21px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .roi {
+    padding: 4px 18px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .counters,
+  .heroLinks {
+    display: none;
+  }
+  .scrollDown {
+    display: block;
+    position: absolute;
+    bottom: 108px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero {
+    min-height: 100%;
+    height: calc(100vh - 80px);
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-bottom: 150px;
+    box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+
+  .heroContent {
+    min-height: calc(100vh - 137px);
+    justify-content: center;
+  }
+  .heroText {
+    text-align: center;
+    /* height: 55%; */
+  }
+  .heroTitle {
+    font-size: 24px;
+    margin-bottom: 19px;
+  }
+  .heroButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSubTitle {
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  .learnMore {
+    padding: 8px 45px;
+    margin-bottom: 21px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .roi {
+    padding: 8px 45px;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .counters,
+  .heroLinks {
+    display: none;
+  }
+  .scrollDown {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+  }
+}

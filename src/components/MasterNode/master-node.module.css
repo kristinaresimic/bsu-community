@@ -1,0 +1,165 @@
+.masterNode {
+  /* height: 100vh; */
+  padding: 7rem 0;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  max-width: 1428px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  box-shadow: 0px 9px 15px rgba(0, 0, 0, 0.25);
+}
+
+.staking {
+  background-color: #ffffff;
+  max-width: 25rem;
+}
+.nodes {
+  background-color: #5b7eb9;
+  color: #fff;
+  max-width: 30rem;
+  padding-left: 27px;
+
+}
+
+.card h3 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 33px;
+}
+.card p {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.cardLink {
+  display: flex;
+  align-items: center;
+  margin-left: 46px;
+  margin-top: 13px;
+  text-decoration: none;
+}
+.cardLink span {
+  color: #2f4c8e;
+  text-decoration: none;
+  margin-right: 13px;
+  font-size: 18px;
+}
+
+.stakingLeft .icon {
+  margin: 28px 0 0 42px;
+}
+.stakingLeft .text {
+  margin: 28px 28px 24px 46px;
+}
+
+.nodes .icon {
+  margin: 23px 0 33px 0;
+}
+.nodes .text {
+  margin: 0 100px 60px 0;
+}
+.stakingRight .icon {
+  margin: 30px 0 26px 37px;
+}
+.stakingRight .text {
+  margin: 0 16px 20px 37px;
+}
+
+@media only screen and (max-width: 1366px) {
+  .container {
+    width: 100%;
+    max-width: 1428px;
+    padding: 70px 34px;
+  }
+
+  .staking {
+    width: 358px;
+  }
+  .nodes {
+    width: 436px;
+  }
+}
+@media only screen and (max-width: 1365px) {
+  .masterNode {
+    min-height: auto;
+  }
+  .container {
+    width: 100%;
+    margin-top: 70px;
+    padding: 70px 54px;
+    padding-top: 10px;
+    min-height: auto;
+  }
+  .container div {
+    width: auto;
+    width: 90%;
+  }
+
+  .card {
+    align-items: center;
+    margin: 0 20px;
+  }
+  .staking {
+    background-color: #ffffff;
+  }
+  .nodes {
+    background-color: #5b7eb9;
+    color: #fff;
+    /* width: 100%; */
+    padding-left: 27px;
+    margin: 0 20px;
+  }
+
+  .nodes .text {
+    margin: 28px 18px 24px 10px;
+  }
+
+  .cardLink {
+    margin-top: 6px;
+    right: 0;
+    text-align: center;
+    /* align-self: flex-end; */
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100%;
+    max-width: 1428px;
+    padding: 70px 34px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0 0 0;
+    width: 80%;
+  }
+  .card {
+    align-items: center;
+  }
+
+  .nodes .text {
+    margin: 28px 28px 24px 20px;
+  }
+
+  .cardLink {
+    margin-top: 6px;
+    right: 0;
+    text-align: center;
+    /* align-self: flex-end; */
+  }
+}

@@ -1,0 +1,278 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 15rem;
+}
+
+.roiTitle {
+  color: #2f4c8e;
+  font-size: 36;
+  font-weight: 500;
+  margin-top: 62px;
+  margin-bottom: 97px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 836px;
+}
+.topForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enterValue {
+  font-size: 36px;
+  color: #2f4c8e;
+  margin-bottom: 56px;
+  font-weight: 500;
+  width: 475px;
+}
+.numberInput {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #2f4c8e;
+  font-size: 30px;
+  margin-bottom: 65px;
+  color: #2f4c8e;
+}
+.select {
+  width: 395px;
+  display: flex;
+  position: relative;
+  justify-self: center;
+}
+
+.select select {
+  width: 100%;
+  color: #2f4c8e;
+  font-size: 36px;
+  font-weight: 700;
+}
+.bottomLine {
+  width: 395px;
+  right: 0;
+  height: 2px;
+  background-color: #2f4c8e;
+  position: absolute;
+  bottom: 0;
+}
+.arrow {
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+}
+.inline {
+  margin-left: 28px;
+  display: flex;
+
+  width: 395px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  color: #2f4c8e;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/* FORM */
+.centerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.invest {
+  margin-top: 56px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 24px;
+  color: #2f4c8e;
+  margin-bottom: 8px;
+}
+
+.money {
+  margin-bottom: 30px;
+  margin-right: 46px;
+}
+
+.input {
+  width: 395px;
+  border: none;
+  background-color: #6991eb;
+  border-radius: 10px;
+  padding: 7px 0 6px 73px;
+  color: #4b6cb7;
+  font-size: 36px;
+  font-weight: 700;
+  outline: none;
+  margin-bottom: 30px;
+  text-shadow: 0 0 1px #6991eb, 0 0px - 1px rgba(0, 0, 0, 0.25);
+}
+
+.bottomForm {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+}
+.earn {
+  display: flex;
+  flex-direction: column;
+  width: 395px;
+}
+.period {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  color: #2f4c8e;
+  margin-bottom: 12px;
+}
+
+.periodItem {
+  opacity: 0.3;
+}
+
+.active {
+  opacity: 1;
+}
+.earnInput {
+  position: relative;
+  margin-bottom: 0;
+  margin-right: 48px;
+}
+
+.earnBSU {
+  position: absolute;
+  color: #5676ae;
+  font-size: 24px;
+  font-weight: 500;
+  right: 0;
+}
+
+.btn {
+  width: 395px;
+  background-color: #23c5b8;
+  padding: 15px 100px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  /* margin-bottom: 200px; */
+}
+
+@media (max-width: 850px) {
+  .container {
+    margin-bottom: 100px;
+  }
+  .roiTitle {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  .form {
+    width: 90%;
+    align-items: center;
+  }
+  .topForm {
+    width: 100%;
+  }
+  .enterValue {
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .numberInput {
+    margin-bottom: 20px;
+    width: 50%;
+
+    font-size: 18px;
+  }
+  .select {
+    width: 70%;
+  }
+  .select select {
+    font-size: 18px;
+  }
+  .bottomLine {
+    width: 100%;
+  }
+  .text {
+    font-size: 18px;
+  }
+  .inline {
+    margin-left: 10px;
+    width: 100%;
+  }
+  .arrow {
+    display: none;
+  }
+  .logo img {
+    width: 60%;
+  }
+  .invest {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .centerForm {
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+  }
+  .money {
+    margin-right: 0;
+  }
+  .input {
+    width: 100%;
+    padding: 3px 0 3px 20px;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+  .bottomForm {
+    width: 70%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .earn {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .period {
+    width: 90%;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .earnInput {
+    width: 100%;
+    margin-right: 0;
+    /* margin-bottom: 20px; */
+  }
+  .earnBSU {
+    font-size: 12px;
+  }
+  .btn {
+    width: 100%;
+    padding: 7px 20px;
+    font-size: 16px;
+  }
+
+  .invest {
+    /* margin-top: 30px; */
+  }
+  .title {
+    font-size: 14px;
+  }
+}

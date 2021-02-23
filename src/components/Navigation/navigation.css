@@ -1,0 +1,133 @@
+.headerBg {
+  background-color: rgba(32, 71, 143, 0.15);
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 34px;
+}
+.logo-img{
+  transform: scale(1.2);
+}
+.menu {
+  flex: 1;
+  list-style-type: none;
+  display: flex;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  justify-self: center;
+  margin: 0;
+  padding: 0;
+}
+.menu a {
+  text-decoration: none;
+  color: inherit;
+  color: inherit;
+}
+
+.menu__item {
+  margin: 0 23px;
+}
+
+.menu__itemActive {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 0 23px;
+}
+
+.options {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.loginBtn {
+  background-color: #55b959;
+  padding: 9px 27px;
+  border: none;
+  border-radius: 150px;
+  margin-right: 20px;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.signUp {
+  text-decoration: underline;
+  color: inherit;
+  margin-right: 20px;
+}
+.signUp:hover {
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+}
+.hamburger button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 1429px) {
+  .menu__item {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .options {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .headerBg {
+    justify-content: center;
+    align-items: center;
+    height: 61px;
+    width: 100%;
+  }
+  .menu {
+    /* display: none; */
+  }
+  .menu__item {
+    margin: 0 10px;
+    font-size: 12px;
+  }
+  .menu__itemActive {
+    /* font-size: 16px; */
+  }
+  .logo {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    margin-bottom: 8px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .headerBg {
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 61px;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+    margin-bottom: 8px;
+  }
+}

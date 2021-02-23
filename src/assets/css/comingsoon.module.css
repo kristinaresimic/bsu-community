@@ -1,0 +1,39 @@
+.comingSoon {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url("../images/Landing\ Page\ BG.jpg");
+}
+/* .comingSoon img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: -8;
+} */
+.text {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+}
+.text img {
+  height: 20%;
+}
+.text p {
+  font-size: 2rem;
+  color: #fff;
+}
+.goBackBtn {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  padding: 5px 20px;
+  background: transparent;
+}

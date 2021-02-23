@@ -1,0 +1,346 @@
+.calculator {
+  /* height: 100vh; */
+  max-height: 1480px;
+  /* width: 100vw; */
+  background-image: url("../../assets/images/calculatorBG.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 45px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 30px 0;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+.header {
+  text-align: center;
+  color: #47648f;
+  font-size: 26px;
+  font-weight: 600;
+}
+.subHeader {
+  margin: 30px 0 20px 0;
+  color: #47648f;
+  font-weight: 600;
+}
+.form {
+  width: 100%;
+  max-width: 920px;
+  margin: 80px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 20px;
+}
+
+.invest {
+  display: flex;
+  justify-content: space-between;
+}
+
+.earnings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.period {
+  flex: 2;
+  /* height: 200px; */
+}
+
+.termostat {
+  flex: 1;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  /* padding: 10px 30px; */
+}
+
+/* YEARLY */
+.periodGroup {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-end; */
+  user-select: none;
+  margin-bottom: 10px;
+}
+.periodGroupActive {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 10px;
+}
+.periodGruopFields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.projectDescription {
+  font-size: 13px;
+  padding: 10px 20px;
+}
+.projectDescription a {
+  text-decoration: none;
+  margin-left: 5px;
+}
+.yearlyInput {
+  margin-top: 0px;
+  padding: 2px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 16px;
+  color: #47648f;
+}
+
+.yearlyInput span:nth-child(1) {
+  font-weight: 700;
+  margin-right: 5px;
+}
+.yearTitle {
+  font-size: 17px;
+  color: #47648f;
+  font-weight: bold !important;
+}
+
+.periodGroup p {
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/* INPUT GROUP */
+.inputGroup {
+  margin-top: 20px;
+  position: relative;
+}
+
+.bsuPrice {
+  position: absolute;
+  right: 0;
+  top: 13px;
+  font-size: 12px;
+  opacity: 0.4;
+}
+.bsuTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex svg {
+  width: 12px;
+}
+.bsuSmall,
+.downInputDesc {
+  text-align: right;
+  font-size: 12px !important;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.bsuSmall span,
+.downInputDesc {
+  opacity: 0.4;
+}
+.tool {
+  cursor: pointer;
+  width: 15px;
+  height: 10px;
+  margin-left: 5px;
+  display: flex;
+  /* align-items: fle; */
+  align-items: center;
+}
+.tool svg {
+  width: 12px;
+}
+
+.largeInput {
+  width: 48%;
+}
+.mediumInput {
+  width: 50%;
+}
+.smallInput {
+  margin-left: 20px;
+  width: 35%;
+}
+.inputGroup p {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.input {
+  margin-top: 0px;
+  padding: 2px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 18px;
+  color: #47648f;
+}
+
+.input span {
+  color: #47648f;
+  font-weight: 700;
+}
+
+.input input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  margin-left: 5px;
+  width: 100%;
+  color: #47648f;
+}
+.investColor {
+  background-color: #9bf5af;
+}
+.earningColor {
+  background-color: #cafaf7;
+}
+.blueColor {
+  background-color: #9bf5af;
+  /* background-color: #c8d7ff; */
+}
+.neutralColor {
+  background-color: #f2f2f2;
+}
+
+/* DROPDOWN */
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #47648f;
+}
+.dropItem {
+  display: flex;
+  align-items: center;
+}
+
+.dropItem img {
+  margin-right: 5px;
+  height: 20px;
+}
+
+/* TERMOSTAT */
+.termostatText {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  color: #47648f;
+  text-align: center;
+}
+.termostatDescription {
+  /* margin-bottom: 5px; */
+  font-size: 14px;
+  width: 90%;
+  text-align: center;
+}
+.termostatPercent {
+  font-size: 30px;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+.therBsu,
+.therTotal {
+  position: relative;
+}
+.therBsu::before {
+  content: "";
+  position: absolute;
+  background-color: #9bf5af;
+  height: 10px;
+  width: 10px;
+  left: -15px;
+  top: 4px;
+  border-radius: 50%;
+}
+.therTotal::before {
+  content: "";
+  position: absolute;
+  background-color: #c8d7ff;
+  height: 10px;
+  width: 10px;
+  left: -15px;
+  top: 4px;
+  border-radius: 50%;
+}
+
+.investBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.investBtn button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 50px;
+  background-color: #9bf5af;
+  color: #47648f;
+  /* font-weight: bold; */
+  font-size: 18px;
+  margin-top: 20px;
+}
+.bsuTooltip {
+  background-color: #47648f !important;
+  padding: 10px 30px !important;
+}
+
+.bsuTooltip li {
+  list-style-type: none;
+  margin: 5px 0;
+}
+/* YEARLY EARNINGS */
+
+.footer {
+  text-align: center;
+  color: #5f5f5f;
+}
+@media (max-width: 785px) {
+  .invest {
+    flex-direction: column;
+  }
+  .period {
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+  }
+  .periodGroup {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .periodGruopFields {
+    flex-direction: column;
+  }
+  .mediumInput {
+    width: 100%;
+  }
+  .largeInput {
+    width: 100%;
+  }
+  .smallInput {
+    width: 100%;
+    margin-left: 0;
+  }
+  .earnings {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,212 @@
+.slider {
+  width: 100%;
+  margin-bottom: 65px;
+}
+.slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.slider input[type="range"]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.slider input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+/* Special styling for WebKit/Blink */
+.slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* border: 1px solid #000000; */
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background: #678ee4;
+  cursor: pointer;
+  margin-top: -5px;
+  box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+}
+
+.slider input[type="range"]::-moz-range-thumb {
+  box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background: #678ee4;
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.slider input[type="range"]::-ms-thumb {
+  box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+  height: 27px;
+  width: 27px;
+  border-radius: 50%;
+  background: #678ee4;
+  cursor: pointer;
+}
+
+.slider input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  background-color: #5676ae;
+}
+
+.slider input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #5676ae;
+}
+
+.slider input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+  background-color: red;
+}
+
+.slider input[type="range"]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+  background-color: red;
+}
+.slider input[type="range"]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background-color: red;
+}
+.slider input[type="range"]:focus::-ms-fill-lower {
+  background: #3071a9;
+  background-color: red;
+}
+.slider input[type="range"]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background-color: red;
+}
+.slider input[type="range"]:focus::-ms-fill-upper {
+  background: #367ebd;
+  background-color: red;
+}
+
+@media (max-width: 800px) {
+  .slider {
+    width: 60%;
+    margin-bottom: 30px;
+  }
+
+  /* Special styling for WebKit/Blink */
+  .slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    /* border: 1px solid #000000; */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #678ee4;
+    cursor: pointer;
+    margin-top: -5px;
+    box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+  }
+
+  .slider input[type="range"]::-moz-range-thumb {
+    box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #678ee4;
+    cursor: pointer;
+  }
+
+  /* All the same stuff for IE */
+  .slider input[type="range"]::-ms-thumb {
+    box-shadow: 4px 0 2px -1px rgba(0, 0, 0, 0.25);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #678ee4;
+    cursor: pointer;
+  }
+
+  .slider input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    cursor: pointer;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    background-color: #5676ae;
+  }
+
+  .slider input[type="range"]:focus::-webkit-slider-runnable-track {
+    background: #5676ae;
+  }
+
+  .slider input[type="range"]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background: #3071a9;
+    border-radius: 1.3px;
+    border: 0.2px solid #010101;
+    background-color: red;
+  }
+
+  .slider input[type="range"]::-ms-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    border-width: 16px 0;
+    color: transparent;
+    background-color: red;
+  }
+  .slider input[type="range"]::-ms-fill-lower {
+    background: #2a6495;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background-color: red;
+  }
+  .slider input[type="range"]:focus::-ms-fill-lower {
+    background: #3071a9;
+    background-color: red;
+  }
+  .slider input[type="range"]::-ms-fill-upper {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 2.6px;
+    box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+    background-color: red;
+  }
+  .slider input[type="range"]:focus::-ms-fill-upper {
+    background: #367ebd;
+    background-color: red;
+  }
+}

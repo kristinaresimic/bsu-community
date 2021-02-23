@@ -1,0 +1,50 @@
+.slider {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.track {
+  position: relative;
+  height: 148px;
+  width: 25px;
+  box-shadow: inset 0 -1px 7px rgba(0, 0, 0, 0.25);
+  /* background-color: red; */
+  border-radius: 30px;
+  background-position: top;
+  top: 0;
+  left: 0;
+  transition: 0.7s all ease;
+}
+.trackActive {
+  background-color: #5b7eb8;
+  background-position: bottom;
+  animation: trackAnimation 1s ease forwards;
+}
+
+.thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #355a97;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: -9px; */
+  transition: 0.5s ease all;
+}
+.thumbActive {
+  margin-top: 104px;
+  /* bottom: 0; */
+  /* transition: 1s ease all; */
+}
+
+@keyframes trackAnimation {
+  0% {
+    background-position: top;
+  }
+  100% {
+    background-position: 40%;
+  }
+}
